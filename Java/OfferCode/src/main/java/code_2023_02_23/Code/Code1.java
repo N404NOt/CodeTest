@@ -12,6 +12,8 @@ import java.util.Stack;
 *
 * */
 public class Code1 {
+
+    // 方法一：每个节点都是当前状态的留影
     class CQueue {
 
         Stack<Integer> stack1;
@@ -48,6 +50,10 @@ public class Code1 {
 
         }
     }
+
+
+    // 方法二：
+
 }
 
 /**
