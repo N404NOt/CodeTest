@@ -1,0 +1,66 @@
+下面哪个标识符是合法的？ (D)
+A. 9HelloWorld
+B. _Hello World  \
+C. Hello*World
+D. Hello$World
+
+
+将下列哪个代码（A、B、C、D）放入程序中标注的【代码】处将导致编译错误？ (C)
+
+    class A{
+        public float getNum(){
+            return 3.0f;
+        }
+    }
+    public class B extends A{
+        【代码】
+    }
+
+A. public float getNum(){return 4.0f;}
+B. public void getNum(){}
+C. public void getNum(double d){}
+D. public double getNum(float d){return 4.0d;}
+
+方法重写要求方法名，返回值类型，参数完全相同，所以A符合，
+                B返回值类型不同，编译错误。
+                而C和D不仅返回值类型不同，参数也不同，不属于方法重写，而是属于子类自己新增的方法。
+                所以选B
+
+重写与重载之间的区别
+区别点	重载方法	重写方法
+参数列表	必须修改	一定不能修改
+返回类型	可以修改	一定不能修改
+异常	    可以修改	可以减少或删除，一定不能抛出新的或者更广的异常
+访问	    可以修改	一定不能做更严格的限制（可以降低限制）
+
+
+重载规则:
+
+被重载的方法必须改变参数列表(参数个数或类型不一样)；
+被重载的方法可以改变返回类型；
+被重载的方法可以改变访问修饰符；
+被重载的方法可以声明新的或更广的检查异常；
+方法能够在同一个类中或者在一个子类中被重载。
+无法以返回值类型作为重载函数的区分标准。
+
+
+
+如下代码的输出结果是什么？ （D）
+    public class Test {
+         public int aMethod(){
+         static int i = 0;      // static 编译失败，方法不是静态的，变量是静态的
+         i++;
+         return i;
+     }
+    public static void main(String args[]){
+         Test test = new Test();
+         test.aMethod();
+         int j = test.aMethod();
+         System.out.println(j);
+         }
+    }
+
+A. 0
+B. 1
+C. 2
+D、编译失败
