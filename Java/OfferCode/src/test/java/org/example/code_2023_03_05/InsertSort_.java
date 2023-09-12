@@ -1,3 +1,4 @@
+/*
 
 package org.example.code_2023_03_05;
 
@@ -7,11 +8,13 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
+*/
 /**
  * 借鉴了网上的插入排序，重新写了一个
  * 这个是从后往前比较，
  * 直观看起来少一重循环
- */
+ *//*
+
 @Slf4j
 public class InsertSort_ {
  
@@ -39,4 +42,4 @@ public class InsertSort_ {
             arr[j + 1] = tmp;
         }
     }
-}
+}*/
